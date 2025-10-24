@@ -10,7 +10,7 @@ on:
       - .github/workflows/dd-service.yml
 
 jobs:
-  dd-service-validate:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
