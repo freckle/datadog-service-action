@@ -14,4 +14,4 @@ jobs:
         with:
           sparse-checkout: |
             service.datadog.yaml
-      - uses: "chris-martin/datadog-service-validate@dev"
+      - uses: "./"
