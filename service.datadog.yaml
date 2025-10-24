@@ -1,0 +1,11 @@
+---
+schema-version: v2
+dd-service: example
+repos:
+  - name: Source
+    provider: github
+    url: https://example.com
+links:
+  - name: About
+    type: wiki
+    url: https://example.com/wiki/
