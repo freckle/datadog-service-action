@@ -22,7 +22,7 @@ runs:
       run: cat "${{ github.action_path }}/package.json"
 
     - id: pnpm
-      uses: pnpm/action-setup@v4
+      uses: pnpm/action-setup@v5
       with:
         run_install: true
         version: "10.28.1"
