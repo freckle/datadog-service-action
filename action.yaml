@@ -29,6 +29,7 @@ runs:
 
     - shell: bash
       run: |
+        ${{ steps.pnpm.outputs.bin_dest }}/pnpm --version
         ${{ steps.pnpm.outputs.bin_dest }}/pnpm install
       working-directory: ${{ github.action_path }}
 
