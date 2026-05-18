@@ -17,8 +17,6 @@ runs:
         curl -L -O 'https://raw.githubusercontent.com/DataDog/schema/main/service-catalog/v2/schema.json'
       working-directory: ${{ github.action_path }}
 
-    - uses: actions/setup-node@v6
-
     - shell: bash
       run: |
         npx pajv \
