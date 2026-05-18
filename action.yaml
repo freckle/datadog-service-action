@@ -21,6 +21,10 @@ runs:
       name: test debug print
       run: cat "${{ github.action_path }}/package.json"
 
+    # Ensure new enough node to install pnpm
+    # See https://github.com/freckle/datadog-service-action/actions/runs/25991420366/job/76398133218
+    - uses: actions/setup-node@v6
+
     - id: pnpm
       uses: pnpm/action-setup@v5
       with:
