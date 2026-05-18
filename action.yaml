@@ -24,6 +24,9 @@ runs:
     # Ensure new enough node to install pnpm
     # See https://github.com/freckle/datadog-service-action/actions/runs/25991420366/job/76398133218
     - uses: actions/setup-node@v6
+      with:
+        node-version: 24
+        package-manager-cache: pnpm
 
     - id: pnpm
       uses: pnpm/action-setup@v5
